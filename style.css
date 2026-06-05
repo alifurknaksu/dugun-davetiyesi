@@ -60,7 +60,7 @@ body{
 .card{aspect-ratio:9/16;border-radius:25px;overflow:hidden;position:relative;background:url("Medya (1).jpg") center/cover;}
 .overlay{position:absolute;inset:0;background:rgba(0,0,0,.6);}
 .content{position:relative;color:white;text-align:center;padding:40px 15px;display:flex;flex-direction:column;gap:10px;}
-.namesBig{font-family:"Alex Brush";font-size:55px;color:#f5d98b;}
+.namesBig{font-family:"Alex Brush";font-size:45px;color:#f5d98b;}
 .intro{font-size:12px;color:rgba(245,217,139,.9);}
 
 /* FAMILY */
