@@ -3,173 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Ayşegül & Ali Evleniyor</title>
-
+<title>Ayşegül & Ali</title>
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ================= ENVELOPE ================= -->
+<!-- ENVELOPE -->
 <div id="envelopeScreen" class="envelope-wrapper">
-
-    <div class="envelope" onclick="openInvitation()">
-
-        <div class="flap"></div>
-
-        <div class="top-title">EVLENİYORUZ</div>
-
-        <div class="seal seal-pulse">A&A</div>
-
-        <div class="bottom-text">
-            <div class="names">Ayşegül & Ali</div>
-            <div class="hint">Açmak için mühre dokunun</div>
-        </div>
-
+  <div class="envelope" onclick="openInvitation()">
+    <div class="flap"></div>
+    <div class="top-title">EVLENİYORUZ</div>
+    <div class="seal">A&A</div>
+    <div class="bottom-text">
+      <div class="names">Ayşegül & Ali</div>
+      <div class="hint">Açmak için dokunun</div>
     </div>
+  </div>
 </div>
 
-<!-- ================= MAIN ================= -->
+<!-- MAIN CONTENT -->
 <div id="mainContent" class="main">
 
-    <!-- CARD -->
-    <div class="card">
-        <div class="overlay"></div>
-        <div class="content">
+  <div class="card">
+    <div class="overlay"></div>
+    <div class="content">
 
-            <h1 class="namesBig">Ayşegül & Ali</h1>
+      <h1 class="namesBig">Ayşegül & Ali</h1>
+      <p class="intro">Bu mutlu günümüzde sizleri aramızda görmekten mutluluk duyarız.</p>
 
-            <p class="intro">
-                Bu mutlu günümüzde sizleri de aramızda görmekten büyük mutluluk duyarız.
-            </p>
+      <!-- FAMILY -->
+      <div class="families-row">
+        <div class="family-box">
+          <div class="title-small">GELİN AİLESİ</div>
+          <div class="family-name">Aysel Gül</div>
+          <div class="family-name">Yusuf Kırlı</div>
+        </div>
+        <div class="family-box">
+          <div class="title-small">DAMAT AİLESİ</div>
+          <div class="family-name">Sevim Aksu</div>
+          <div class="family-name">Güven Aksu</div>
+        </div>
+      </div>
 
-            <!-- FAMILY -->
-<div class="families-row">
+      <!-- DATE -->
+      <div class="date-glass">
+        <div class="date-left">
+          <div class="label">GÜN</div>
+          <div class="value">CUMA</div>
+        </div>
+        <div class="date-center">
+          <div class="date-main">03 TEMMUZ 2026</div>
+        </div>
+        <div class="date-right">
+          <div class="label">SAAT</div>
+          <div class="value">20:00</div>
+        </div>
+      </div>
 
-    <div class="family-box">
-        <div class="title-small">GELİN AİLESİ</div>
+      <!-- TAG -->
+      <div class="tag">🚗 Gelin alma konvoyu 18:30'da damadın evinden kalkacaktır.</div>
 
-        <div class="family-name">✨Aysel Gül</div>
-        <div class="family-name">🌿Yusuf Kırlı</div>
+      <!-- MAP BUTTON -->
+      <div class="map-wrapper">
+        <a class="map-btn" href="https://maps.app.goo.gl/D2b6BYpRh6wRJYNM8" target="_blank">
+          <div class="map-icon">📍</div>
+          <div class="map-text">
+            <div class="map-title">Haritada Gör</div>
+            <div class="map-sub">Akarsu Park Düğün Salonu</div>
+          </div>
+        </a>
+      </div>
+
     </div>
+  </div>
 
-    <div class="family-box">
-        <div class="title-small">DAMAT AİLESİ</div>
-
-        <div class="family-name">✨Sevim Aksu</div>
-        <div class="family-name">🌿Güven Aksu</div>
+  <!-- COUNTDOWN -->
+  <div class="countdown-card">
+    <div class="countdown-title">DÜĞÜNE KALAN</div>
+    <div class="countdown-time">
+      <div class="count-box"><div id="days">00</div><span>GÜN</span></div>
+      <div class="count-box"><div id="hours">00</div><span>SAAT</span></div>
+      <div class="count-box"><div id="minutes">00</div><span>DK</span></div>
+      <div class="count-box"><div id="seconds">00</div><span>SN</span></div>
     </div>
+  </div>
+
+  <!-- LCV -->
+  <div class="form">
+    <form id="lcvForm">
+      <div class="row">
+        <input id="firstName" placeholder="İsim" required>
+        <input id="lastName" placeholder="Soyisim" required>
+      </div>
+      <select id="attendance">
+        <option>🥳 Katılıyorum</option>
+        <option>😔Katılamıyorum</option>
+      </select>
+      <textarea id="note" placeholder="Mesaj (isteğe bağlı)"></textarea>
+      <button>WhatsApp Gönder</button>
+    </form>
+  </div>
 
 </div>
 
-            <!-- DATE PREMIUM -->
-            <div class="date-glass">
-
-                <div class="date-left">
-                    <div class="label">GÜN</div>
-                    <div class="value">CUMA</div>
-                </div>
-
-                <div class="date-center">
-                    <div class="date-main">03 TEMMUZ 2026</div>
-                </div>
-
-                <div class="date-right">
-                    <div class="label">SAAT</div>
-                    <div class="value">20.00</div>
-                </div>
-
-            </div>
-
-            <!-- TAG -->
-            <div class="tag">
-                🚗 Gelin Alma Konvoyu 18:30’da Damadın Evinden Kalkacaktır
-            </div>
-
-<div class="map-wrapper">
-    <a class="map-btn" href="https://maps.app.goo.gl/D2b6BYpRh6wRJYNM8" target="_blank">
-
-        <div class="map-icon">📍</div>
-
-        <div class="map-text">
-            <div class="map-title">Akarsu Park Düğün Salonu</div>
-            <div class="map-sub">Google Haritalarda Aç</div>
-        </div>
-
-    </a>
-</div>
-
-        </div>
-    </div>
-
-    <!-- ================= COUNTDOWN ================= -->
-    <div class="countdown-card">
-
-        <div class="countdown-title">DÜĞÜNE KALAN</div>
-
-        <div class="countdown-time">
-
-            <div class="count-box">
-                <div class="count-num" id="days">00</div>
-                <div class="count-label">GÜN</div>
-            </div>
-
-            <div class="count-box">
-                <div class="count-num" id="hours">00</div>
-                <div class="count-label">SAAT</div>
-            </div>
-
-            <div class="count-box">
-                <div class="count-num" id="minutes">00</div>
-                <div class="count-label">DK</div>
-            </div>
-
-            <div class="count-box">
-                <div class="count-num" id="seconds">00</div>
-                <div class="count-label">SN</div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- ================= LCV ================= -->
-    <div class="form">
-
-        <h3>LCV (Katılım Durumu)</h3>
-
-        <form id="lcvForm">
-
-            <div class="row">
-                <input id="firstName" placeholder="İsim" required>
-                <input id="lastName" placeholder="Soyisim" required>
-            </div>
-
-            <select id="attendance">
-                <option>🥳 Katılıyorum</option>
-                <option>😔 Katılamıyorum</option>
-            </select>
-
-            <textarea id="note" placeholder="Tebrik mesajı (isteğe bağlı)"></textarea>
-
-            <button type="submit">WhatsApp Gönder</button>
-
-        </form>
-
-    </div>
-
-</div>
-
-<!-- MUSIC -->
 <audio id="bgMusic" loop>
-    <source src="Ordinary.mp3" type="audio/mpeg">
+  <source src="Ordinary.mp3" type="audio/mpeg">
 </audio>
-
-<script src="script.js"></script>
 
 <div id="confetti"></div>
 
+<script src="script.js"></script>
 </body>
 </html>
