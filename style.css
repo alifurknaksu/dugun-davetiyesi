@@ -31,7 +31,7 @@ body{
   background:radial-gradient(circle,#8b0000,#3a0000);
   color:#f5d98b;font-weight:bold;
   display:flex;align-items:center;justify-content:center;
-  position:absolute;top:160px;z-index:5;
+  position:absolute;top:180px;z-index:5;
   box-shadow:0 10px 30px rgba(0,0,0,.4);
   transition:.4s;
 }
@@ -84,19 +84,70 @@ margin-top:12px;position:relative;
 .tag{font-size:10px;background:rgba(0,0,0,.25);padding:6px 10px;border-radius:18px;color:#f5d98b;margin-top:8px;}
 
 /* MAP */
-.map-wrapper{text-align:center;margin-top:10px;}
-.map-btn{
-display:inline-flex;align-items:center;gap:8px;justify-content:center;
-padding:12px 14px;border-radius:16px;
-background:rgba(255,255,255,.1);border:1px solid rgba(245,217,139,.35);
-backdrop-filter:blur(12px);text-decoration:none;color:white;
-box-shadow:0 10px 25px rgba(0,0,0,.25);max-width:90%;
+/* ================= MAP FINAL FIX ================= */
+
+.map-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-top:12px;
 }
-.map-btn:hover{background:rgba(255,255,255,.14);transform:translateY(-2px);box-shadow:0 15px 30px rgba(0,0,0,.35);}
-.map-icon{font-size:20px;}
-.map-text{display:flex;flex-direction:column;text-align:center;justify-content:center;line-height:1.2;}
-.map-title{font-size:13px;font-weight:600;color:white;}
-.map-sub{font-size:10px;color:#f5d98b;}
+
+/* link kutusu */
+.map-btn{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:12px 16px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,0.10);
+    border:1px solid rgba(245,217,139,.35);
+
+    backdrop-filter:blur(14px);
+
+    text-decoration:none;
+    color:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    max-width:92%;
+}
+
+/* icon */
+.map-icon{
+    font-size:22px;
+    flex-shrink:0;
+}
+
+/* TEXT CENTER FIX */
+.map-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;   /* 👈 ÖNEMLİ FIX */
+    line-height:1.2;
+}
+
+/* başlık */
+.map-title{
+    font-size:14px;
+    font-weight:600;
+    color:#ffffff;
+    letter-spacing:.3px;
+
+    text-shadow:0 2px 6px rgba(0,0,0,.4);
+}
+
+/* alt yazı (ARTIK NET GÖRÜNÜR) */
+.map-sub{
+    font-size:11px;
+    color:#f5d98b;
+    opacity:1;              /* 👈 FIX */
+    margin-top:2px;
+    font-weight:500;
+}
 
 /* COUNTDOWN */
 /* ================= COUNTDOWN PREMIUM ================= */
